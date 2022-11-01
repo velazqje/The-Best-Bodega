@@ -14,4 +14,4 @@ The following optional features are implemented:
  List anything else that you can get done to improve the app functionality!
  
  
- <img src='wishlistGif.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+ <img src='best_bodega_gif.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
