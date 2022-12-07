@@ -1,0 +1,588 @@
+/*
+
+#160C28 Dark Purple
+#efcb68 Orang Yellow Crayola
+#e1efe6 Honeydew
+#001B2E Oxford Blue
+#294C60 Charcoal
+
+font-family: 'Nunito', sans-serif;
+
+*/
+
+/*  ===== MOBILE styles (reside at the top and are inherited by all devices) ===== */
+/*  ===== See tablet, desktop, and print @media queries at the bottom. */
+
+/*   ----- Font Imports from Google -----  */
+
+@font-face {
+  font-family: "Nunito", sans-serif;
+}
+
+/*   ----- Variables  -----  */
+:root {
+  --custom-color-name: ;
+  --custom-embellishment-name: ;
+}
+
+/*  ----- Viewport ----- elements inherited by all remaining elements ----- */
+body {
+  /* Can alternatively define in html {} or :root {} */
+  color: #160c28;
+  background-color: #e1efe6;
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  margin: 0px;
+  padding: 0px;
+  min-width: 500px;
+}
+
+.App {
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+}
+
+.App-logo {
+  height: vmin;
+  pointer-events: none;
+}
+
+/* ----- Anchors ----- Text links */
+a {
+}
+a:link {
+}
+a:hover {
+}
+a:active {
+}
+a:visited {
+}
+
+/*  ----- Navigation ----- Override text links for navigation only.  */
+
+nav,
+#nav_ul {
+  margin-bottom: 0px;
+  max-width: fit-content;
+  background-color: #efcb68;
+  color: #001b2e;
+  border: none;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+}
+
+nav a,
+.App-link {
+  background-color: #d8a9325f;
+  color: #294c60;
+  border: 1px;
+  border-radius: 5px; /*rounds */
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0px;
+  font-size: calc(10px + 2vmin);
+  font-weight: bold;
+  margin-bottom: 0px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 0px;
+  text-decoration: none;
+  text-decoration-color: #e1efe6;
+  text-underline-offset: 8px;
+  font-family: "Nunito", sans-serif;
+  cursor: pointer;
+}
+
+nav a:hover,
+.App-link:hover {
+  background-color: #d8a9325f;
+  color: #0e2c3d;
+  text-decoration: overline;
+  border: none;
+  font-size: calc(10px + 2vmin);
+  font-weight: bold;
+  margin-bottom: 0px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 0px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.App-link:visited {
+  text-decoration: solid;
+  text-decoration-color: #294c60;
+}
+
+.App-link:active {
+  text-decoration-style: dashed;
+}
+
+/*  ----- Page layout blocks -----  */
+header,
+.App-header {
+  background-color: #efcb68;
+  color: #0e2c3d;
+  border: none;
+  font-size: calc(10px + 2vmin);
+  font-weight: normal;
+  margin: 0px;
+  padding: 0px;
+  min-height: 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  background-color: #294c60;
+  color: #e1efe6;
+  border: 0px;
+  padding: auto;
+  background-image: url(../public/trophy_background.png);
+  background-size: 50%;
+  min-height: 300px;
+  /* min-height: min-content; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+main p {
+  color: #e1efe6;
+}
+
+section {
+}
+article {
+}
+#topic1 {
+}
+#topic2 {
+}
+#gallery1 {
+}
+#gallery2 {
+}
+div {
+}
+aside {
+}
+footer,
+.App-footer {
+  background-color: #e1efe6;
+  max-height: 7%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #294c60;
+}
+
+.App-footer p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/*  -----  Typography  ----- */
+p {
+  margin-top: 0;
+  font-weight: ;
+}
+br {
+}
+ol,
+ul,
+dl {
+}
+li {
+}
+dt {
+}
+dd {
+}
+
+/* Define consistant font family.*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+}
+h1 {
+  margin-bottom: 0px;
+}
+
+h2 {
+  color: #efcb68;
+}
+h3 {
+}
+h4 {
+}
+h5 {
+}
+h6 {
+}
+
+abbr {
+}
+acronym {
+}
+address {
+}
+blockquote {
+}
+q {
+}
+cite {
+}
+em {
+}
+hr {
+}
+mark {
+}
+s {
+}
+span {
+}
+strong {
+}
+sub {
+}
+sup {
+}
+time {
+}
+
+/*  ----- Coding or instructional typography ----- */
+pre {
+}
+code {
+}
+kbd {
+}
+samp {
+}
+var {
+}
+del {
+}
+ins {
+}
+
+/*  ----- Table ----- */
+table {
+  width: 100%;
+  min-width: 600px;
+  border: #e1efe6;
+  border-width: 0px;
+  text-align: left;
+  border-collapse: collapse;
+  background-color: #294c60;
+  /* table-layout: fixed;  */
+  /*
+  vertical-align: middle;
+  align-content: center; */
+
+  /* padding: 0 10px; */
+}
+caption {
+}
+thead {
+  color: #efcb68;
+}
+tbody {
+  border-style: none;
+  border: none;
+}
+tfoot {
+}
+table tr {
+  border: none;
+  padding: 0px;
+}
+tr:nth-child(even) {
+}
+th {
+}
+
+td {
+  border: none;
+  padding: none;
+  /* min-width: fit-content; */
+}
+td:nth-child(1) {
+}
+colgroup {
+}
+data {
+}
+datalist {
+}
+
+th,
+td {
+  padding-left: 10px;
+  padding-right: 10px;
+  border: none;
+  overflow: hidden;
+  column-width: 30%;
+}
+
+#sq_td,
+#sq_th {
+  text-align: center;
+  min-width: 10;
+  max-width: 10;
+}
+
+#sq_td {
+  min-width: 50px;
+  max-width: 50px;
+}
+
+#sq_th {
+  text-align: center;
+}
+
+.price {
+  text-align: right;
+}
+
+th,
+tr:first-child {
+  background-color: #253e54;
+}
+
+tr:nth-child(2n + 1) {
+  /* background-color: #160c2835; */
+  background-color: #253e54;
+}
+
+tr:last-child {
+}
+
+th {
+  background-color: #294c60;
+  border: none;
+  padding: none;
+}
+
+#zipID {
+  border: 1px;
+  border-radius: 5px;
+  background-color: #e1efe6;
+  font-family: "Nunito", sans-serif;
+  font-size: calc(5px + 2vmin);
+  margin: 4px 2px;
+  padding: 0px 15px;
+  color: #0e2c3d;
+  margin-right: 5px;
+}
+
+.quant {
+  /* width: 100%; */
+  /* padding-left:10px;
+  padding-right:10px; */
+  padding: 0;
+  /* margin: 0 10px; */
+  width: 100%;
+  flex: none;
+  overflow: hidden;
+  font-size-adjust: 0.5;
+  max-width: 30px;
+  min-width: 30px;
+}
+
+.arrow_inc {
+  text-align: left;
+  /* padding-left: 10px;
+  padding-right: 10px; */
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.arrow_dec {
+  text-align: right;
+  /* padding-left: 10px;
+  padding-right: 10px; */
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+#total {
+  color: #efcb68;
+  font-weight: bold;
+}
+
+#priceless {
+  text-align: center;
+}
+
+/*  ----- Form ----- */
+form {
+}
+fieldset {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0;
+  border: 2px solid #001b2e;
+  border-bottom: ;
+  border-radius: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+legend {
+}
+label {
+}
+button {
+  border: 1px;
+  border-radius: 5px;
+  background-color: #efcb68;
+  font-family: "Nunito", sans-serif;
+  font-size: calc(5px + 2vmin);
+  margin: 4px 2px;
+  padding: 0px 15px;
+  cursor: pointer;
+  color: #001b2e;
+}
+input {
+  padding: 1px;
+  font-family: "Nunito", sans-serif;
+  font-size: calc(5px + 2vmin);
+}
+output {
+}
+meter {
+}
+progress {
+}
+select {
+}
+optgroup {
+}
+option {
+}
+textarea {
+}
+
+#zip,
+#ziplegend {
+  color: #efcb68;
+  margin-right: 10px;
+}
+
+/* ----- Media ----- */
+figure {
+}
+figcaption {
+}
+img {
+}
+svg {
+}
+picture {
+}
+source {
+}
+iframe {
+}
+video {
+}
+audio {
+}
+embed {
+}
+object {
+}
+
+/*  ----- Classes for alignment, positioning, widths, grids, embellishments, and animation -----  */
+.floatright {
+}
+.floatleft {
+}
+.center-middle {
+}
+
+.ten {
+}
+.twenty {
+}
+.thirty {
+}
+.forty {
+}
+.fifty {
+}
+.sixty {
+}
+.seventy {
+}
+.eighty {
+}
+
+.radius {
+}
+.circle {
+}
+.boxshadow {
+}
+.tshadow {
+}
+.gradient {
+}
+.shape {
+}
+
+@keyframes App-logo {
+}
+
+/*   ===== TABLET  media query overrides mobile styles ===== */
+@media all and (min-width: 600px) {
+}
+
+/*   ===== DESKTOP  media query overrides mobile and tablet styles ===== */
+@media all and (min-width: 1080px) {
+}
+
+/*   ===== PRINT  media query overrides previous styles =====  */
+@media print {
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* .allArticles h1 {
+  vertical-align:top;
+  min-height: 600px;
+} */
